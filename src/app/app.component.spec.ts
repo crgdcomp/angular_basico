@@ -26,6 +26,12 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('angular_basico');
   });
 
+  it(`should have as teste 'testando Jasmine!'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('angular_basico');
+  });
+
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
